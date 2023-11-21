@@ -7,15 +7,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>Etch a Sketch</h1>
+        <h1>Sketch Pad</h1>
+        <!--<button class="grid-set" onclick="gridSet()">Set grid size</button>-->
         <div class="content"></div>
             <div class="board">
             </div>
             <div class="buttons">
-                <button>Black</button>
-                <button>White</button>
-                <button>Random</button>
+                <button>blank</button>
+                <button>blank</button>
+                <button>blank</button>
                 <button>Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Set Size of Board" value="16" onchange="changeSize(this.value)" />
+                <button>Set Size</button>
             </div>
 
     </div>
