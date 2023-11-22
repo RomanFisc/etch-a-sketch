@@ -33,15 +33,12 @@ h1{
 }
 
 .grid-item {
-    /* border: 1px solid #ddd; */
-    text-align: center;
     background-color: purple;
 }
 
 .buttons{
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 3px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -50,7 +47,6 @@ h1{
 button:active{
     background-color: #313131;
     color: white;
-
 }
 
 button{
