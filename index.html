@@ -13,14 +13,14 @@
             <div class="board">
             </div>
             <div class="buttons">
-                <button>blank</button>
-                <button>blank</button>
-                <button>blank</button>
-                <button>Reset</button>
+                <button onclick="changeColor('Pink')">Pink</button>
+                <button onclick="changeColor('#ab0002')">Red</button>
+                <button onclick="changeColor('Purple')">Eraser</button>
+                <button onclick="clearBoard('')">Clear</button>
             </div>
-            <div>
-                <input type="text" placeholder="Set Size of Board" value="16" onchange="changeSize(this.value)" />
-                <button>Set Size</button>
+            <div class="input-div">
+                <input class='input-field' type="text" placeholder="Set Size of Board (Max 99)" onchange="changeSize(this.value)" />
+                <button class="set-size">Set Size</button>
             </div>
 
     </div>

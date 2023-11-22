@@ -1,3 +1,5 @@
+let color = 'pink';
+
 function populateBoard(size){
     let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
@@ -17,11 +19,11 @@ function populateBoard(size){
         hoverItem[i].addEventListener('mouseover', hoverEffect, false);
     }
     function hoverEffect(event) {
-        event.target.style.backgroundColor = 'pink';
+        event.target.style.backgroundColor = color;
     }
 }
 
-populateBoard(16);
+populateBoard(20);
 
 function changeSize() {
     let input = document.querySelector('input[type="text"]');
@@ -36,16 +38,16 @@ function changeSize() {
     }
 }
 
+function hoverEffect() {
+    this.style.backgroundColor = color;
+};
 
+function changeColor(choice){
+    color = choice;
+};
 
-
-//Prompt 
-//function gridSet() {
-//    var gridSize = prompt ("Please enter a grid size less than 100");
-//    if (gridSize < 100) {
-//        alert(gridSize);
-//    }
-//    else {
-//        alert("Please enter a number less than 100");
-//    }
-//}   
+function clearBoard(){
+    let board = document.querySelector('.board');
+    let squares = board.querySelectorAll('div');
+    squares.forEach((div) =>div.style.backgroundColor = 'purple');
+}
