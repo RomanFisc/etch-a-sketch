@@ -1,4 +1,4 @@
-let color = 'pink';
+let color = '#A62B07';
 
 function populateBoard(size){
     let board = document.querySelector('.board');
@@ -49,5 +49,5 @@ function changeColor(choice){
 function clearBoard(){
     let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
-    squares.forEach((div) =>div.style.backgroundColor = 'purple');
+    squares.forEach((div) =>div.style.backgroundColor = '#b03274');
 }
